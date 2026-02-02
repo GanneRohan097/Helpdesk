@@ -7,8 +7,6 @@ export default function TicketList({ toggleViews }) {
 
   return (
     <div className="relative bg-gray-100 border-r overflow-y-auto">
-
-      {/* Header */}
       <div className="flex items-center justify-between p-3 border-b bg-white sticky top-0 z-10">
         <div className="flex items-center gap-2">
           <button
@@ -19,8 +17,6 @@ export default function TicketList({ toggleViews }) {
           </button>
           <p className="font-semibold">My Tickets</p>
         </div>
-
-        {/* Filter Button */}
         <button
           onClick={() => setShowFilters(!showFilters)}
           className="p-2 rounded hover:bg-gray-100"
@@ -28,19 +24,13 @@ export default function TicketList({ toggleViews }) {
           <SlidersHorizontal size={16} />
         </button>
       </div>
-
-      {/* Search */}
       <div className="p-3 bg-gray-100">
         <input
           className="w-full p-2 rounded border"
           placeholder="Search tickets"
         />
       </div>
-
-      {/* Ticket Filters Popover */}
       {showFilters && <TicketFilters onClose={() => setShowFilters(false)} />}
-
-      {/* Tickets */}
       <div className="p-3 space-y-2">
         <Ticket active />
         <Ticket />

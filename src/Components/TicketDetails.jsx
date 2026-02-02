@@ -10,7 +10,7 @@ export default function TicketDetails() {
   return (
     <div className="h-full bg-gray-50 overflow-y-auto">
 
-      {/* Header */}
+    
       <div className="bg-white border-b p-4">
         <div className="flex justify-between items-start">
           <div>
@@ -34,7 +34,7 @@ export default function TicketDetails() {
         </div>
       </div>
 
-      {/* Tabs */}
+    
       <div className="bg-white px-4 border-b flex gap-6 text-sm">
         <button className="border-b-2 border-blue-600 py-3 text-blue-600 font-medium">
           Public Reply
@@ -44,9 +44,9 @@ export default function TicketDetails() {
         </button>
       </div>
 
-      {/* Reply Box */}
+      
       <div className="bg-white m-4 rounded-lg border">
-        {/* To row */}
+    
         <div className="px-4 py-2 border-b text-sm flex items-center gap-2">
           <span className="text-gray-500">To:</span>
           <span className="bg-gray-100 px-2 py-1 rounded flex items-center gap-1">
@@ -55,14 +55,13 @@ export default function TicketDetails() {
           </span>
         </div>
 
-        {/* Editor */}
         <textarea
           className="w-full p-4 text-sm outline-none resize-none"
           rows="5"
           placeholder="Add a reply..."
         />
 
-        {/* Toolbar */}
+
         <div className="flex items-center justify-between px-4 py-2 border-t text-gray-500">
           <div className="flex gap-4 text-sm">
             <button className="font-bold">B</button>
@@ -83,10 +82,8 @@ export default function TicketDetails() {
         </div>
       </div>
 
-      {/* Conversation */}
-      <div className="space-y-4 px-4 pb-6">
 
-        {/* Message */}
+      <div className="space-y-4 px-4 pb-6">
         <div className="bg-white p-4 rounded-lg border">
           <div className="flex justify-between">
             <div className="flex gap-3">
@@ -113,8 +110,6 @@ export default function TicketDetails() {
             Ex beatae aliquid mollitia. Enim doloremque molestiae voluptatem
             recusandae. Maxime beatae nostrum ut.
           </p>
-
-          {/* Attachments */}
           <div className="flex gap-2 mt-3">
             <div className="border px-2 py-1 rounded text-xs">
               Screen_shot.png<br />16 Jun 2022, 1:30 PM
@@ -125,7 +120,6 @@ export default function TicketDetails() {
           </div>
         </div>
 
-        {/* Second message */}
         <div className="bg-white p-4 rounded-lg border">
           <div className="flex justify-between">
             <div className="flex gap-3">
